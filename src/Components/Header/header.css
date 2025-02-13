@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+.jersey-15-regular {
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    background-color: rgb(14, 14, 31);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+
+.header h1{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 7vh;
+}
+
+.header-links{
+    width: 18%;
+    font-size: 3vh;
+    font-family: "Jersey 15", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-links p{
+    padding-right: 5%;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .header-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .header h1{
+        font-size: 7vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-links{
+        font-size: 3vh;
+    }
+    .header h1{
+        font-size: 8vh;
+    }
+}

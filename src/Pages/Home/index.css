@@ -1,0 +1,27 @@
+.Home{
+    display: grid;
+    grid-template-rows: 0.08fr 2.6fr 0.06fr;
+    grid-template-areas: 
+    "header"
+    "casabackground"
+    "footer"
+    ;
+}
+
+.header{
+    grid-area: header;
+}
+
+.casabackground{
+    grid-area: casabackground;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+@media (max-width: 1028px) {
+    .Home{
+        grid-template-rows: 0.09fr 2.6fr 0.08fr;
+    }
+}
