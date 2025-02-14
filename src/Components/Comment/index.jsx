@@ -31,12 +31,18 @@ export default function Comment() {
 
     return (
 
-        <div>
+        <div className="comment">
             <div className="sugestao-form">
-                <form>
+                <form className="form">
                     <h1>Recomendações</h1>
-                    <input name='nome' placeholder="Nome" type="text" ref={inputName}/>
-                    <input name='recomendacao' placeholder="Sugestão" type="text" ref={inputRecomendacao}/>
+                    <div className="input-group">
+                        <input name='nome' type="text" ref={inputName}/>
+                        <label htmlFor="">Nome</label>
+                    </div>
+                    <div className="input-group">
+                        <input name='recomendacao' type="text" ref={inputRecomendacao}/>
+                        <label htmlFor="">Sugestão</label>
+                    </div>
                     <button type='button' onClick={createComment}>Enviar</button>
                 </form>
             </div>

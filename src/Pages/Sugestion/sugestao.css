@@ -1,0 +1,22 @@
+.sugestion{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.08fr 2.6fr 0.06fr;
+    grid-template-areas: 
+    "header"
+    "sugestao"
+    "footer"
+    ;
+}
+
+.header{
+    grid-area: "header";
+}
+
+.sugestao {
+    grid-area: "sugestao";
+}
+
+.footer{
+    grid-area: "footer";
+}
