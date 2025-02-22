@@ -1,15 +1,37 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
 
 import "./header.css"
+import hamburger from "../../svg/menu.svg"
 
 export default function Header() {
-    return(
-        <div className="header">
-            <Link className="link" to='/'><h1>paivacritic</h1></Link>
-            <div className="header-links">
-                <Link className="link" to='/sobre'>Sobre Mim</Link>
-                <Link className="link" to='/sugestao'>Sugestões</Link>
-            </div>
-        </div>
-    )
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+        <header className="header">
+            <Link className="link" to="/">
+                <h1>paivacritic</h1>
+            </Link>
+
+            <nav>
+                <ul className={`nav ${isOpen ? "active" : ""}`}>
+                    <li>
+                        <Link className="link" to="/sobre">Sobre Mim</Link>
+                    </li>
+                    <li>
+                        <Link className="link" to="/sugestao">Sugestões</Link>
+                    </li>
+                </ul>
+            </nav>
+
+            <button
+                className="hamburger"
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label="Abrir menu"
+            >
+                <img src={hamburger} alt="Ícone do menu" height={50}/>
+            </button>
+        </header>
+    );
 }
