@@ -1,5 +1,5 @@
 .sobre{
-    height: 100vh;
+    max-height: 100vh;
     display: grid;
     grid-template-rows: 0.04fr 2.6fr 0.05fr;
     grid-template-areas: 

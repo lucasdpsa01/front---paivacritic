@@ -4,4 +4,11 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .sobrebackground{
+        flex-direction:column-reverse;
+    }
 }

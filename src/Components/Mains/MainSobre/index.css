@@ -9,6 +9,12 @@
     font-style: normal;
 }
 
+.lato-black-pequeno {
+    font-family: "Lato-pequeno", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 
 .mulish {
     font-family: "Mulish", serif;
@@ -16,7 +22,12 @@
     font-weight: 200;
     font-style: normal;
 }
-  
+.mulish-pequeno {
+    font-family: "Mulish-pequeno", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
 
 .container-sobre {
     width: 40%;
@@ -29,5 +40,27 @@
     font-family: "Lato", serif;
 }
 .texto p{
-    font-family: "Jost", serif;
+    font-family: "Mulish", serif;
+}
+
+@media(max-width: 768px) {
+    .container-sobre{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .texto h1{
+        font-family: "Lato-pequeno", serif;
+        text-align: center;
+        padding: 20px;
+    }
+    .texto p{
+        font-family: "Mulish-pequeno", serif;
+        text-align: center;
+    }
+
+    .conhecimento{
+        text-align: center;
+        padding: 10px;
+    }
 }
