@@ -1,7 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.jersey-10-regular {
+  font-family: "Jersey 10", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-black-pequeno {
+    font-family: "Lato-pequeno", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.mulish {
+    font-family: "Mulish", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.mulish-pequeno {
+    font-family: "Mulish-pequeno", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/*  ==================== /\ FONTES /\ ======================
+    ==================== || ====== || ======================*/
+
 .comment{
+    height: auto;
+    width: 1100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .form{
@@ -9,30 +54,86 @@
     flex-direction: column;
     gap: 10px;
 }
-.form h1{
-    text-align: center;
+
+.name-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 10px;
 }
 
-.input-group {
-    margin: 30px 0;
-    border-bottom: 2px solid black;
+.name-icon h1{
+    font-family: "Jersey 10", serif;
+    font-size: 50px;
 }
 
-.input-group label{
-    left: 45%;
-    position: absolute;
-    transform: translateY(-10%);
-    pointer-events: none;
-    transition: .5s;
-}
-
-.input-group input:focus~label,
-.input-group input:focus~label{
-    top: -5px;
-}
-
-.input-group input{
-    
-    border: none;
+.form input{
+    width: 370px;
+    padding: 10px;
+    border: 1px solid #ccc;
     outline: none;
+    border-radius: 5px;
 }
+.form :focus, textarea:focus {
+    border-color: #000000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.form textarea{
+    width: 370px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+}
+
+.form button{
+    background: #000000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background 0.3s;
+    width: 370px;
+}
+
+
+/*                     comentarios                 */
+
+.container-comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.users-comment{
+    padding: 30px;
+    height: 500px;
+    scroll-behavior: smooth;
+    gap: 1.2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-comment h1{
+    font-family: "Jersey 10", serif;
+    font-size: 50px;
+}
+
+.user-comment{
+    padding: 20px;
+    color: white;
+    background-color: rgb(14, 14, 31);
+    border-radius: 10px;
+    
+}
+

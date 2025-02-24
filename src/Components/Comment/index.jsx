@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react"
 import api from "../../services/api"
 
 import "./comment.css"
+import comment from "../../svg/comment.svg"
 
 export default function Comment() {
     const [sugests, setSugests] = useState([])
@@ -34,26 +35,28 @@ export default function Comment() {
         <div className="comment">
             <div className="sugestao-form">
                 <form className="form">
-                    <h1>Recomendações</h1>
-                    <div className="input-group">
-                        <input name='nome' type="text" ref={inputName}/>
-                        <label htmlFor="">Nome</label>
+                    <div className="name-icon">
+                        <img src={comment} alt="comentario-icon" height={35} />
+                        <h1>Deixe um Comentário</h1>
                     </div>
-                    <div className="input-group">
-                        <input name='recomendacao' type="text" ref={inputRecomendacao}/>
-                        <label htmlFor="">Sugestão</label>
-                    </div>
+                    <input name='nome' type="text" placeholder="Nome" ref={inputName} />
+                    <textarea name="sugestao" id="sugestao" rows="4" ref={inputRecomendacao} placeholder="Algum jogo que você recomenda? comente aqui 👇" />
                     <button type='button' onClick={createComment}>Enviar</button>
                 </form>
             </div>
 
 
-            {sugests.map((sugest) => (
-                <div>
-                    <p>Nome: {sugest.nome}</p>
-                    <p>Recomendação: {sugest.recomendacao}</p>
+            <div className="container-comment">
+                <h1>Recomendações</h1>
+                <div className="users-comment">
+                    {sugests.map((sugest) => (
+                        <div className="user-comment">
+                            <p>Nome: {sugest.nome}</p>
+                            <p>Recomendação: {sugest.recomendacao}</p>
+                        </div>
+                    ))}
                 </div>
-            ))}
+            </div>
         </div>
     )
 }
