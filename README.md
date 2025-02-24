@@ -18,6 +18,10 @@ Na aba home
 Na aba sobre mim
 ![QUAL foi o APÓSTOLO DE CRISTO MAIS IMPORTANTE_ - YouTube — Mozilla Firefox 20_02_2025 14_28_24](https://github.com/user-attachments/assets/39013fb5-dbbf-4a12-9879-427895086a3c)
 
+Na aba sugestão
+![paivacritic — Mozilla Firefox 24_02_2025 18_47_35](https://github.com/user-attachments/assets/ae9ab825-9623-40ea-867c-5fb824a1a475)
+
+
 ## 📦 Como rodar o projeto
 
 ## 🔧 Pré-requisitos
