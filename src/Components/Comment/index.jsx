@@ -33,7 +33,7 @@ export default function Comment() {
     return (
 
         <div className="comment">
-            <div className="sugestao-form">
+            
                 <form className="form">
                     <div className="name-icon">
                         <img src={comment} alt="comentario-icon" height={35} />
@@ -43,7 +43,6 @@ export default function Comment() {
                     <textarea name="sugestao" id="sugestao" rows="4" ref={inputRecomendacao} placeholder="Algum jogo que você recomenda? comente aqui 👇" />
                     <button type='button' onClick={createComment}>Enviar</button>
                 </form>
-            </div>
 
 
             <div className="container-comment">

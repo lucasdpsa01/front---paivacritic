@@ -103,7 +103,7 @@
 }
 
 
-/*                     comentarios                 */
+/*                     comentarios                      */
 
 .container-comment{
     display: flex;
@@ -121,7 +121,7 @@
     scroll-snap-type: x mandatory;
     scrollbar-width: thin;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .container-comment h1{
@@ -137,3 +137,29 @@
     
 }
 
+
+@media( max-width: 768px) {
+    .comment{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .form{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name-icon h1{
+        font-size: 45px;
+    }
+
+    .users-comment{
+        height: auto;
+        overflow-x: none;
+    }
+
+}
