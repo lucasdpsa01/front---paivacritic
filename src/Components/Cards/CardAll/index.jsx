@@ -1,6 +1,6 @@
 import { jogos } from "../../../data/jogos"
 
-import "./cardall.css"
+import "../cardall.css"
 
 export default function CardAll() {
     return (

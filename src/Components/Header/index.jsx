@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 
 import "./header.css"
-import hamburger from "../../svg/menu.svg"
+import hamburger from "../../svg/hamburger.svg" 
 
 export default function Header() {
 

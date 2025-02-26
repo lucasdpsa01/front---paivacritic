@@ -33,16 +33,16 @@ export default function Comment() {
     return (
 
         <div className="comment">
-            
-                <form className="form">
-                    <div className="name-icon">
-                        <img src={comment} alt="comentario-icon" height={35} />
-                        <h1>Deixe um Comentário</h1>
-                    </div>
-                    <input name='nome' type="text" placeholder="Nome" ref={inputName} />
-                    <textarea name="sugestao" id="sugestao" rows="4" ref={inputRecomendacao} placeholder="Algum jogo que você recomenda? comente aqui 👇" />
-                    <button type='button' onClick={createComment}>Enviar</button>
-                </form>
+
+            <form className="form">
+                <div className="name-icon">
+                    <img src={comment} alt="comentario-icon" height={35} />
+                    <h1>Deixe um Comentário</h1>
+                </div>
+                <input name='nome' type="text" placeholder="Nome" ref={inputName} />
+                <textarea name="sugestao" id="sugestao" rows="4" ref={inputRecomendacao} placeholder="Algum jogo que você recomenda? comente aqui 👇" />
+                <button type='button' onClick={createComment}>Enviar</button>
+            </form>
 
 
             <div className="container-comment">

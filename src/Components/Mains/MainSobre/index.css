@@ -64,3 +64,13 @@
         padding: 10px;
     }
 }
+
+@media(max-width:1000px) {
+    .container-sobre{
+        width: 60%;
+        gap: 30px;
+    }
+    .texto h1{
+        font-size: 25px;
+    }
+}

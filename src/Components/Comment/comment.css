@@ -137,6 +137,26 @@
     
 }
 
+@media( max-width:1000px ) {
+    .comment{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+    
+    .form{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name-icon h1{
+        font-size: 45px;
+    }
+}
+
 
 @media( max-width: 768px) {
     .comment{
