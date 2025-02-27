@@ -20,8 +20,4 @@
     grid-area: footer;
 }
 
-@media (max-width: 1028px) {
-    .Home{
-        grid-template-rows: 0.09fr 2.6fr 0.08fr;
-    }
-}
+

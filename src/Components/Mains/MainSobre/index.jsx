@@ -18,13 +18,13 @@ export default function MainSobre() {
             </div>
             <div className="conhecimento">
                 <h2>Conhecimento Técnico</h2>
-                <div className='icons'>
-                    <img src={htmlicon} alt="html-icon" width={50}/>
-                    <img src={cssicon} alt="css-icon" width={50}/>
-                    <img src={jsicon} alt="js-icon" width={50}/>
-                    <img src={reacticon} alt="react-icon" width={50}/>
-                    <img src={nodeicon} alt="node-icon" width={50}/>
-                    <img src={pythonicon} alt="python-icon" width={50}/>
+                <div className='linguagens'>
+                    <img src={htmlicon} alt="html-icon" height={50}/>
+                    <img src={cssicon} alt="css-icon" height={50}/>
+                    <img src={jsicon} alt="js-icon" height={50}/>
+                    <img src={reacticon} alt="react-icon" height={50}/>
+                    <img src={nodeicon} alt="node-icon" height={50}/>
+                    <img src={pythonicon} alt="python-icon" height={50}/>
                 </div>
             </div>
         </div>
