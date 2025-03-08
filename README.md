@@ -68,9 +68,9 @@ Antes de começar, certifique-se de ter instalado:
 ## 🛠 Funcionalidades
     -✅ Listar, criar e excluir comentários
     -✅ Consumo de API externa
+    -✅ Responsivel
 
 ## 📌 Roadmap
-  - Melhorar a responsividade
   - Adicionar a categória filmes e séries.
 
 ## 🤝 Contribuição
