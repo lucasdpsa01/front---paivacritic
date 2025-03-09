@@ -1,4 +1,4 @@
-# 📌 Avaliação de Jogos - Paivacritic
+# 📌 Avaliação de Jogos - Paivacritic (Desatualizado)
 
 Um web site, onde mostro jogos que joguei recentimente e dou nota. Tem até uma funcionalidade de você mandar sua sugestão.
 
