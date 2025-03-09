@@ -1,29 +1,41 @@
 import { useEffect, useState, useRef } from "react"
-import api from "../../services/api"
-
+import { supabase } from "../../services/supabase";
 import "./comment.css"
 import comment from "../../svg/comment.svg"
 
 export default function Comment() {
-    const [sugests, setSugests] = useState([])
-
-    const inputName = useRef()
-    const inputRecomendacao = useRef()
+    const [sugests, setSugests] = useState([]);
+    const inputName = useRef();
+    const inputRecomendacao = useRef();
 
     async function getComment() {
-        const sugestsFromApi = await api.get('/sugestao')
+        const { data, error } = await supabase
+        .from("sugestoes")
+        .select("*")
+        .order("created_at", { ascending: false });
 
-        setSugests(sugestsFromApi.data)
+        if (error) {
+            console.error("Erro ao buscar sugestões:", error);
+            return;
+        }
+
+        setSugests(data);
     }
 
     async function createComment() {
-
-        await api.post('/sugestao', {
-            nome: inputName.current.value,
-            recomendacao: inputRecomendacao.current.value
-        })
-
-        getComment()
+        const { error } = await supabase
+        .from("sugestoes")
+        .insert([
+            {
+                nome: inputName.current.value,
+                recomendacao: inputRecomendacao.current.value
+            }
+        ]);
+        if (error) {
+            console.error("Erro ao criar sugestão:", error);
+            return;
+        }
+        getComment();
     }
 
     useEffect(() => {
