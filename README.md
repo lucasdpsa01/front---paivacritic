@@ -38,10 +38,10 @@ Antes de começar, certifique-se de ter instalado:
 3) Instale as dependências:
 ```npm install```
 
-5) Inicie o servidor de desenvolvimento:
+4) Inicie o servidor de desenvolvimento:
 ```npm run dev```
 
-6) Abra o navegador na porta que o Vite indicar
+5) Abra o navegador na porta que o Vite indicar
 
 ## 📁 Estrutura do Projeto
 
