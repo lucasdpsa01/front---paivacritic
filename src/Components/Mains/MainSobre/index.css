@@ -30,16 +30,12 @@
 }
 
 /* CSS */
-
-.container-sobre {
-    width: 40%;
+.texto{
+    width: 70%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-}
-
-.conhecimento h2{
-    font-family: "Lato", serif;
+    
+    gap: 20px;
 }
 
 .texto h1{
@@ -47,14 +43,6 @@
 }
 .texto p{
     font-family: "Mulish", serif;
-}
-
-.linguagens {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 20px;
-    padding-top: 10px;
 }
 
 @media(max-width: 768px) {
@@ -71,11 +59,6 @@
     .texto p{
         font-family: "Mulish-pequeno", serif;
         text-align: center;
-    }
-
-    .conhecimento{
-        text-align: center;
-        padding: 10px;
     }
 }
 

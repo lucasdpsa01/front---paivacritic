@@ -1,31 +1,15 @@
-import htmlicon from '../../../svg/html.svg'
-import cssicon from '../../../svg/css.svg'
-import jsicon from '../../../svg/js.svg'
-import reacticon from '../../../svg/react-js.svg'
-import nodeicon from '../../../svg/node-js.svg'
-import pythonicon from '../../../svg/python.svg'
-
+import megaicon from "../../../images/megaman.png"
 import "./index.css"
 
 export default function MainSobre() {
     return (
         <div className="container-sobre">
+            <img src={megaicon} alt="megaman" height={90}/>
             <div className="texto">
-                <h1>Oi! Eu sou Lucas D. Paiva de Sá</h1>
-                <p>Sou criativo, auto motivado e fascinado em melhorar. Estou sempre em busca de conhecimentos que me possibilitem evoluir. Sou um rapaz inquieto quando não consigo obter soluções.
-                    Habilidades interpessoais e conhecimento diversificado são meus principais diferenciais.
-                </p>
-            </div>
-            <div className="conhecimento">
-                <h2>Conhecimento Técnico</h2>
-                <div className='linguagens'>
-                    <img src={htmlicon} alt="html-icon" height={50}/>
-                    <img src={cssicon} alt="css-icon" height={50}/>
-                    <img src={jsicon} alt="js-icon" height={50}/>
-                    <img src={reacticon} alt="react-icon" height={50}/>
-                    <img src={nodeicon} alt="node-icon" height={50}/>
-                    <img src={pythonicon} alt="python-icon" height={50}/>
-                </div>
+                <h1>Bem-vindo ao Paivacritic!</h1>
+                <p>Sou uma pessoa apaixonada por jogos e tecnologia, e criei esta plataforma para reunir e avaliar os jogos que joguei ao longo de 2024.</p>
+                <p>O site é simples e feito por mim, com o objetivo de compartilhar minhas opiniões e permitir que outros usuários enviem sugestões de jogos. As atualizações serão feitas anualmente.</p>
+                <p>Estou sempre buscando melhorar, e sua participação é muito bem-vinda para tornar este espaço ainda mais interessante.</p>
             </div>
         </div>
     );
